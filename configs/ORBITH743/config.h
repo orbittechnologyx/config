@@ -48,9 +48,6 @@
 #define MOTOR7_PIN           PB0
 #define MOTOR8_PIN           PB1
 
-// #define SERVO1_PIN           PE5
-// #define SERVO2_PIN           PE6
-
 #define RX_PPM_PIN           PA3
 #define LED_STRIP_PIN        PA0
 
@@ -95,18 +92,16 @@
 
 #define ESCSERIAL_PIN        PB15
 #define ADC_VBAT_PIN         PC0
-#define ADC_2_VBAT_PIN       PA1    // Kontrol
 #define ADC_CURR_PIN         PC1
-#define ADC_2_CURR_PIN       PA4    // Kontrol
-
 #define ADC_RSSI_PIN         PC5
-// #define ADC_EXTERNAL1_PIN    PC4
+
 #define PINIO1_PIN           PC8
-// #define PINIO2_PIN           PD11
+#define PINIO1_CONFIG 129
+#define PINIO1_BOX 40
+
 #define CAMERA_CONTROL_PIN   PB11
 #define FLASH_CS_PIN         PD3
 #define MAX7456_SPI_CS_PIN   PE6
-#define BARO_EXTI_PIN        PB2    // Kontrol
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_2_EXTI_PIN      PB2
 #define GYRO_1_CS_PIN        PE8
@@ -114,42 +109,35 @@
 #define USB_DETECT_PIN       PA10
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA10, 1,  0) \
-    TIMER_PIN_MAP( 1, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 2, PB1 , 2,  1) \
-    TIMER_PIN_MAP( 3, PA0 , 2,  2) \
-    TIMER_PIN_MAP( 4, PA1 , 2,  3) \
-    TIMER_PIN_MAP( 5, PA2 , 2,  4) \
-    TIMER_PIN_MAP( 6, PA3 , 2,  5) \
-    TIMER_PIN_MAP( 7, PD12, 1,  6) \
-    TIMER_PIN_MAP( 8, PD13, 1,  7) \
-    TIMER_PIN_MAP( 9, PD14, 1, 12) \
-    TIMER_PIN_MAP(10, PD15, 1, -1) \
-    TIMER_PIN_MAP(11, PE5 , 1,  0) \
-    TIMER_PIN_MAP(12, PE6 , 1, -1) \
-    TIMER_PIN_MAP(13, PA8 , 1, 14)
-
-
+    TIMER_PIN_MAP( 0, PB6, 2,  0) \
+    TIMER_PIN_MAP( 1, PB7, 2,  1) \
+    TIMER_PIN_MAP( 2, PB8, 2,  2) \
+    TIMER_PIN_MAP( 3, PB9, 2,  3) \
+    TIMER_PIN_MAP( 4, PB4, 1,  4) \
+    TIMER_PIN_MAP( 5, PB5, 1,  5) \
+    TIMER_PIN_MAP( 6, PB0, 2,  6) \
+    TIMER_PIN_MAP( 7, PB1, 2,  7) \
+    TIMER_PIN_MAP( 8, PA0,  1, 14) \
+    TIMER_PIN_MAP( 9, PB11, 1, -1) \
+    TIMER_PIN_MAP( 10, PA3, 2, -1) 
 
 #define ADC1_DMA_OPT        8
-#define ADC3_DMA_OPT        9
-#define TIMUP1_DMA_OPT      0
+
+#define TIMUP2_DMA_OPT      0
 #define TIMUP3_DMA_OPT      2
 #define TIMUP4_DMA_OPT      1
 #define TIMUP5_DMA_OPT      0
 
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
-#define MAG_I2C_INSTANCE (I2CDEV_1)
-#define BARO_I2C_INSTANCE (I2CDEV_2)
+//#define MAG_I2C_INSTANCE (I2CDEV_1)
+#define BARO_I2C_INSTANCE (I2CDEV_4)
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_CURRENT_METER_SCALE 500
+//#define DEFAULT_CURRENT_METER_SCALE 500
 #define BEEPER_INVERTED
+
 #define MAX7456_SPI_INSTANCE SPI2
-#define PINIO1_CONFIG 129
-#define PINIO1_BOX 39
-#define PINIO2_BOX 40
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
