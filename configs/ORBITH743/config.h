@@ -131,25 +131,22 @@
     TIMER_PIN_MAP( 6, PD12, 1,  6) \
     TIMER_PIN_MAP( 7, PD13, 1,  7) \
     \
-    TIMER_PIN_MAP( 8, PA15, 1,  0) \
+    TIMER_PIN_MAP( 8, PA15, 1, -1) \
     TIMER_PIN_MAP( 9, PB3,  1, -1) \
-    TIMER_PIN_MAP(10, PC8 , 2,  0) \
+    TIMER_PIN_MAP(10, PC8 , 2, -1) \
     TIMER_PIN_MAP(11, PC9 , 2, -1) \
     \
     TIMER_PIN_MAP( 12, PA8,  1, 14) \
     TIMER_PIN_MAP( 13, PE5,  1, -1) \
-    TIMER_PIN_MAP( 14, PB15,  2, 0)
-
+    TIMER_PIN_MAP( 14, PB15,  2, -1)
 
 
 #define ADC1_DMA_OPT        8
 
 #define TIMUP1_DMA_OPT      0
-#define TIMUP2_DMA_OPT      0
-#define TIMUP3_DMA_OPT      0
-#define TIMUP4_DMA_OPT      0
+#define TIMUP3_DMA_OPT      2
+#define TIMUP4_DMA_OPT      1
 #define TIMUP5_DMA_OPT      0
-#define TIMUP8_DMA_OPT      0
 
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
 //#define MAG_I2C_INSTANCE (I2CDEV_1)
