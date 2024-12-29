@@ -141,12 +141,11 @@
     TIMER_PIN_MAP( 14, PB15,  2, -1)
 
 
-#define ADC1_DMA_OPT        8
+#define ADC1_DMA_OPT        1
 
-#define TIMUP1_DMA_OPT      0
-#define TIMUP3_DMA_OPT      2
-#define TIMUP4_DMA_OPT      1
-#define TIMUP5_DMA_OPT      0
+#define TIMUP3_DMA_OPT      8
+#define TIMUP4_DMA_OPT      9
+#define TIMUP5_DMA_OPT      10
 
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
 //#define MAG_I2C_INSTANCE (I2CDEV_1)
