@@ -45,13 +45,13 @@
 #define MOTOR4_PIN           PA3
 #define MOTOR5_PIN           PB0
 #define MOTOR6_PIN           PB1
-#define MOTOR7_PIN           PD12
-#define MOTOR8_PIN           PD13
+#define MOTOR7_PIN           PB4
+#define MOTOR8_PIN           PB5
 
 #define SERVO1_PIN           PA15
 #define SERVO2_PIN           PB3
-#define SERVO3_PIN           PC8
-#define SERVO4_PIN           PC9
+#define SERVO3_PIN           PD12
+#define SERVO4_PIN           PD13
 
 #define RX_PPM_PIN           PB15
 #define LED_STRIP_PIN        PA8
